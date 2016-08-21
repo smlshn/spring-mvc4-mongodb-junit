@@ -8,6 +8,8 @@
 	<name>Koton Spring Mvc 4 MongoDB</name>
 
 	<properties>
+		<tomcat.port>9191</tomcat.port>
+		<tomcat.plugin.version>2.2</tomcat.plugin.version>
 		<jdk.version>1.8</jdk.version>
 		<spring.version>4.1.8.RELEASE</spring.version>
 		<jstl.version>1.2</jstl.version>
@@ -120,11 +122,11 @@
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
+				<version>${tomcat.plugin.version}</version>
 
 				<configuration>
 					<path>/</path>
-					<port>9191</port>
+					<port>${tomcat.port}</port>
 				</configuration>
 			</plugin>
 
